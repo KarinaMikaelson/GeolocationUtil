@@ -1,47 +1,65 @@
-GeolocationUtil
-A simple command-line utility that fetches geolocation details (latitude, longitude, and place name) for a given city/state or zip code using the OpenWeather Geocoding API.
+# GeolocationUtil
 
-Features
-	•	✅ Accepts multiple locations as input.
-	•	✅ Supports both city/state (Example: "New York, NY") and zip code (Example: "90210").
-	•	✅ Fetches latitude, longitude, and place name from OpenWeather API.
-	•	✅ Built using Java 22, Maven, and RestAssured (for API testing).
-	•	✅ Includes integration tests using JUnit.
+## A simple command-line utility that fetches geolocation details (latitude, longitude, and place name) for a given city/state or zip code using the OpenWeather Geocoding API.
 
 
-Installation
+##  Features  
+✅ Accepts **multiple locations** as input  
+✅ Supports both **City, State** (Example: `"New York, NY"`) and **ZIP Code** (Example: `"90210"`)  
+✅ Fetches **latitude, longitude, and place name** from OpenWeather API  
+✅ Built using **Java 22, Maven, and RestAssured** (for API testing)  
+✅ Includes **integration tests** using JUnit 
 
-1. Clone the Repository
+
+##  Requirements  
+
+- **Java 17+**  
+- **Maven** (for dependency management)  
+
+
+##  Installation  
+
+### 1️⃣ Clone the Repository  
+```commandline
 git clone https://github.com/KarinaMikaelson/GeolocationUtil.git
+```
+```commandline
 cd GeolocationUtil
+```
 
-2. Build the Project
-Make sure you have Java 17+ and Maven installed.
+### 2️⃣ Build the Project 
+Make sure you have Java 17+ and Maven installed. Then run:
+```commandline
 mvn clean package
+```
 
-Usage
 
-Run 
-After building the project
-You can pass either a City, State or a ZIP Code as input arguments.
+## Usage
 
-Example with one input:
+### Run the Utility 
+After building the project, you can pass either a City, State or a ZIP Code as input arguments.
+
+#### One input:
+```commandline
 java -jar target/geoloc-util.jar "New York, NY"
-
-Example with more that one input:
+```
+#### More that one input:
+```commandline
 java -jar target/geoloc-util.jar "San Diego, CA" "10001" "90017"
+```
 
-
-Example Output
+#### Example Output
+```commandline
 Place: New York, Latitude: 40.712727, Longitude: -74.00601
-
+```
+```commandline
 Place: San Diego, Latitude: 32.71742, Longitude: -117.16277
 Place: New York, Latitude: 40.7484, Longitude: -73.9967
 Place: Los Angeles, Latitude: 34.0559, Longitude: -118.2666
-
+```
 
 Project Structure
-
+```commandline
 GeolocationUtil/
 │── src/
 │   ├── main/
@@ -56,12 +74,18 @@ GeolocationUtil/
 │   │   │   │   ├── GeoLocationFetchTest.java  # Integration tests for geolocation fetch
 │── pom.xml                # Maven build file with dependencies and plugins
 │── README.md              # Instructions on how to install, configure, and use the tool
+```
 
 
-Testing
-Run integration tests using JUnit:
+## Testing
+#### Run integration tests using JUnit:
+```commandline
 mvn test
+```
 
-
-License
+## License
 This project is open-source under the MIT License.
+
+## Contributing
+
+Pull requests are welcome! Feel free to open an issue for any improvements or suggestions.
