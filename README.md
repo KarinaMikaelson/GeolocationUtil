@@ -58,24 +58,6 @@ Place: New York, Latitude: 40.7484, Longitude: -73.9967
 Place: Los Angeles, Latitude: 34.0559, Longitude: -118.2666
 ```
 
-Project Structure
-```commandline
-GeolocationUtil/
-│── src/
-│   ├── main/
-│   │   ├── java/com/
-│   │   │   ├── geolocation/  
-│   │   │   │   ├── GeoLocationFetch.java   # Main class to fetch geolocation data
-│   │   │   ├── utils/
-│   │   │   │   ├── GeoLocationUtil.java    # Utility class for API configurations
-│   ├── test/
-│   │   ├── java/com/
-│   │   │   ├── geolocation/  
-│   │   │   │   ├── GeoLocationFetchTest.java  # Integration tests for geolocation fetch
-│── pom.xml                # Maven build file with dependencies and plugins
-│── README.md              # Instructions on how to install, configure, and use the tool
-```
-
 
 ## Testing
 #### Run integration tests using JUnit:
